@@ -9,7 +9,7 @@ app=Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/ipl_team_win_predict',methods=['GET','POST'])
 def predict():
     team1=str(request.args.get('team1'))
     team2=str(request.args.get('team2'))
