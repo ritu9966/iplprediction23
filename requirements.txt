@@ -9,7 +9,6 @@ aiohttp==3.7.4
 aiomultiprocess==0.8.0
 aiosqlite==0.16.1
 aiowinreg==0.0.3
-alembic==1.4.3.dev0
 aniso8601==9.0.1
 anyio==0.0.0
 apispec==3.3.1
