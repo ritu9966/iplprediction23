@@ -18,10 +18,10 @@ def predict():
     toss_winner=int(request.args.get('toss_winner'))
     choose=int(request.args.get('toss_decision'))
     print(team1,team2,toss_winner,choose)
-    with open('/home/stellamarsh/ipl_project/ipl/model1.pkl','rb') as f:
+    with open('model1.pkl','rb') as f:
         model1=pkl.load(f)
 
-    with open('/home/stellamarsh/ipl_project/ipl/inv_vocab.pkl','rb') as f:
+    with open('inv_vocab.pkl','rb') as f:
         inv_vocab=pkl.load(f)
     cteam1=inv_vocab[team1]
     cteam2=inv_vocab[team2]
